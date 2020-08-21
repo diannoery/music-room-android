@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/fragmentHomeListMusic">
+
+    <fragment
+        android:id="@+id/fragmentHomeListMusic"
+        android:name="com.example.musicplayerandroidv2.fragments.FragmentHomeListMusic"
+        android:label="fragment_home_list_music"
+        tools:layout="@layout/fragment_home_list_music" >
+        <action
+            android:id="@+id/action_fragmentHomeListMusic_to_fragmentAddMusic"
+            app:destination="@id/fragmentAddMusic" />
+        <action
+            android:id="@+id/action_fragmentHomeListMusic_to_fragmentDetailMusic"
+            app:destination="@id/fragmentDetailMusic" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentAddMusic"
+        android:name="com.example.musicplayerandroidv2.fragments.FragmentAddMusic"
+        android:label="fragment_add_music"
+        tools:layout="@layout/fragment_add_music" />
+    <fragment
+        android:id="@+id/fragmentDetailMusic"
+        android:name="com.example.musicplayerandroidv2.fragments.FragmentDetailMusic"
+        android:label="fragment_detail_music"
+        tools:layout="@layout/fragment_detail_music" >
+        <action
+            android:id="@+id/action_fragmentDetailMusic_to_fragmentAddListMusicAlbum"
+            app:destination="@id/fragmentAddListMusicAlbum" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentAddListMusicAlbum"
+        android:name="com.example.musicplayerandroidv2.fragments.FragmentAddListMusicAlbum"
+        android:label="fragment_add_list_music_album"
+        tools:layout="@layout/fragment_add_list_music_album" />
+</navigation>
