@@ -4,10 +4,7 @@ import androidx.lifecycle.LiveData
 
 
 class ArtisRepository(private val artistDao: ArtistDao) {
-
-    fun getAlbumWithSong() = artistDao.getAlbumWithSong()
-
-    fun getAllAlbum() = artistDao.getAllAlbum()
+     fun getAllAlbum() = artistDao.getAllAlbum()
 
     fun getAlbumWithId(id: Int) = artistDao.getAlbumWithId(id)
 

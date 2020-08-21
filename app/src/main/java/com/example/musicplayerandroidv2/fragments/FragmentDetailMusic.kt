@@ -54,13 +54,6 @@ class FragmentDetailMusic : Fragment() {
         }
 
 
-//        val album= arguments?.getString("album")
-//        val musicArtistName = arguments?.getString("artist")
-//        val musicImageURL = arguments?.getString("image")
-//        musicImageDetail.load(musicImageURL)
-//        musicArtistNameDetail.text = musicArtistName
-//        musicTitleDetail.text = album
-
     }
 }
 

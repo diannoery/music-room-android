@@ -52,18 +52,5 @@ class ViewModelMusic(application: Application) : AndroidViewModel(application){
         }
     }
 
-//     init {
-//         val artisDao= AppRoomDatabase.getDatabaseIntance(application).artistDao()
-//         repository=ArtisRepository(artisDao)
-//         allArtist=repository.allArtist
-//     }
-
-//    fun addMusic(artist: ArtistAlbum) {
-////        musicList.add(SongList(album, artis, image))
-////        musicLiveData.value = musicList
-//        viewModelScope.launch(Dispatchers.IO){
-//            repository.createArtist(artist)
-//        }
-//    }
 }
 
